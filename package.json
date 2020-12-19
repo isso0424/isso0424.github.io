@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint -c .eslintrc.yml --ignore-path .gitignore '**/*.{ts,tsx}'",
-    "lint:fix": "eslint -c .eslintrc.yml --fix --ignore-path .gitignore '**/*.{ts,tsx}'"
+    "lint": "eslint -c .eslintrc.yml --ignore-path .gitignore 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint -c .eslintrc.yml --fix --ignore-path .gitignore 'src/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
