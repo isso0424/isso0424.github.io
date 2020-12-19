@@ -18,9 +18,13 @@
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "typeRoots": [
+      "types"
+    ]
   },
   "include": [
-    "src"
+    "src",
+    "types/**/*"
   ]
 }
