@@ -3,6 +3,7 @@ import "./Contact.scss";
 
 interface Props {
   url: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   image: any;
   alt: string;
 }
