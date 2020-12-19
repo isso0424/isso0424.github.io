@@ -1,0 +1,51 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - "eslint:recommended"
+  - "plugin:react/recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:prettier/recommended"
+  - "prettier/@typescript-eslint"
+  - "prettier/react"
+  - "prettier/prettier"
+  - airbnb
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - react
+  - '@typescript-eslint'
+rules:
+  quotes: 0
+  no-use-before-define: 0
+  '@typescript-eslint/no-use-before-define':
+    - error
+  'import/extensions':
+    - error
+    - ignorePackages
+    -  {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      }
+  'react/jsx-filename-extension':
+    - 'error'
+    - extensions: 
+      - .jsx
+      - .tsx
+  'react/jsx-indent': off
+  'import/prefer-default-export': off
+settings: 
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
+        - .json
+        - .ts
+        - .tsx
