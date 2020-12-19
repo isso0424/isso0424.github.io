@@ -1,39 +1,25 @@
 import React from "react";
 import "./App.scss";
-import { Contact } from "./components/Contact";
-import facebook from "./facebook-icon.png";
-import twitter from "./twitter-logo.svg";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route } from "react-router";
+import { TopPage } from "./pages/TopPage";
 
-const links = [
-  {
-    url: "https://facebook.com/isso0424",
-    image: facebook,
-    alt: "facebook",
-  },
-  {
-    url: "https://twitter.com/kousou4129",
-    image: twitter,
-    alt: "twitter",
-  },
-];
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
+  const { children } = props;
+  return <>{children}</>;
+};
 
 const App: React.FC = () => (
-  <div className="App-header">
-    <header>
-      <h1>isso0424 portfolio</h1>
-    </header>
-    <p>My portfolio under construction...</p>
-    <h3>Contacts</h3>
-    <div className="contacts">
-      {links.map((link) => (
-        <Contact
-          url={link.url}
-          image={link.image}
-          alt={link.alt}
-          key={link.alt}
-        />
-      ))}
-    </div>
+  <div className="App-main">
+    <Router>
+      <Layout>
+        <Route exact path="/" component={TopPage} />
+      </Layout>
+    </Router>
   </div>
 );
 
