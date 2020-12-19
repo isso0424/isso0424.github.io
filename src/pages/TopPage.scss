@@ -1,0 +1,13 @@
+img.top-page-icon {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 960px) {
+  img.top-page-icon {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+  }
+}
