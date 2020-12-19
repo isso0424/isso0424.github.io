@@ -39,6 +39,7 @@ rules:
       - .jsx
       - .tsx
   'react/jsx-indent': off
+  'import/prefer-default-export': off
 settings: 
   import/resolver:
     node:
