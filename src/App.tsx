@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.scss";
 import { Contact } from "./components/Contact";
-import facebook from "./facebook-icon.png";
-import twitter from "./twitter-logo.svg";
+import facebook from "./static/facebook-icon.png";
+import twitter from "./static/twitter-logo.svg";
 
 const links = [
   {
