@@ -4,15 +4,21 @@ name: Deploy
 # 起動のタイミング
 # 今回はmasterブランチへのpush
 on:
-  push:
+  workflow_run:
+    workflows:
+      - build
     branches:
       - master
+    types:
+      - completed
 
 # ジョブの定義
 jobs:
   deploy:
     # 実行するインスタンス
     runs-on: ubuntu-latest
+
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     # nodeのバージョン一覧
     strategy:
