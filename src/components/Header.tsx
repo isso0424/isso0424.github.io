@@ -10,7 +10,7 @@ const headerContents = [
   },
   {
     message: "About",
-    link: "/",
+    link: "/about",
   },
   {
     message: "Skill",
