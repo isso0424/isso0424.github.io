@@ -1,11 +1,7 @@
 import React from "react";
+import { Skill as SkillProps } from "../type/skill";
 
-interface Props {
-  name: string;
-  imageURL?: string;
-}
-
-export const Skill: React.FC<Props> = (props: Props) => {
+export const Skill: React.FC<SkillProps> = (props: SkillProps) => {
   const { name, imageURL } = props;
 
   return (
