@@ -5,6 +5,7 @@ import { Route } from "react-router";
 import { TopPage } from "./pages/TopPage";
 import { Header } from "./components/Header";
 import { AboutPage } from "./pages/AboutPage";
+import { SkillsPage } from "./pages/SkillsPage";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -25,6 +26,7 @@ const App: React.FC = () => (
     <Layout>
       <Route exact path="/" component={TopPage} />
       <Route path="/about" component={AboutPage} />
+      <Route path="/skills" component={SkillsPage} />
     </Layout>
   </Router>
 );
