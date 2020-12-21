@@ -1,4 +1,5 @@
 import React from "react";
+import "./AboutContent.scss";
 
 interface Props {
   attribute: string;
