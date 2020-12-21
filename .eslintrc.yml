@@ -39,6 +39,7 @@ rules:
       - .jsx
       - .tsx
   'react/jsx-indent': off
+  'react/jsx-one-expression-per-line': off
   'import/prefer-default-export': off
 settings: 
   import/resolver:
@@ -49,3 +50,4 @@ settings:
         - .json
         - .ts
         - .tsx
+
