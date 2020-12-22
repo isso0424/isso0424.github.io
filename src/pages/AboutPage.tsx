@@ -23,8 +23,10 @@ const profiles = [
 export const AboutPage: React.FC = () => (
   <>
     <h1>About</h1>
-    {profiles.map((profile) => (
-      <AboutContent attribute={profile.attribute} content={profile.content} />
-    ))}
+    <div className="main">
+      {profiles.map((profile) => (
+        <AboutContent attribute={profile.attribute} content={profile.content} />
+      ))}
+    </div>
   </>
 );

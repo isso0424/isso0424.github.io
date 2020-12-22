@@ -1,6 +1,7 @@
 import React from "react";
 import { SkillsFrame } from "../components/SkillsFrame";
 import { SkillCategory } from "../type/skill";
+
 import ReactIcon from "../static/react-icon.png";
 import NodeJSIcon from "../static/nodejs-icon.svg";
 import DjangIcon from "../static/django-icon.svg";
@@ -17,6 +18,8 @@ import SASSIcon from "../static/sass-logo.png";
 import AndroidRobotIcon from "../static/android-robot.svg";
 import FlutterIcon from "../static/flutter-logo.svg";
 import ElectronIcon from "../static/electron-logo.svg";
+
+import "./SkillsPage.scss";
 
 const skills: Array<SkillCategory> = [
   {
@@ -120,10 +123,12 @@ const dartLicense =
 export const SkillsPage: React.FC = () => (
   <>
     <h1>Skills</h1>
-    {skills.map((category) => (
-      <SkillsFrame category={category.category} skills={category.skills} />
-    ))}
-    <p>{flutterLicense}</p>
-    <p>{dartLicense}</p>
+    <div className="main">
+      {skills.map((category) => (
+        <SkillsFrame category={category.category} skills={category.skills} />
+      ))}
+    </div>
+    <p className="credit">{flutterLicense}</p>
+    <p className="credit">{dartLicense}</p>
   </>
 );
