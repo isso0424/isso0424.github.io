@@ -1,7 +1,7 @@
 import React from "react";
 import "./LicensePage.scss";
 
-const licenses = [
+const rights = [
   {
     target: "React-logo",
     text: "Non-commercial Use",
@@ -40,10 +40,10 @@ const licenses = [
   },
 ];
 
-export const LicensePage: React.FC = () => (
+export const RightsNotationPage: React.FC = () => (
   <>
     <div className="license-page">
-      {licenses.map((license) => (
+      {rights.map((license) => (
         <div>
           <h4>{license.target}</h4>
           <p className="license-text">{license.text}</p>

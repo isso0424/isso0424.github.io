@@ -42,6 +42,7 @@ rules:
   'react/jsx-one-expression-per-line': off
   'react/require-default-props': off
   'import/prefer-default-export': off
+  'operator-linebreak': off
 settings: 
   import/resolver:
     node:
