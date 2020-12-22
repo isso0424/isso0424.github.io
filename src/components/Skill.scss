@@ -4,5 +4,6 @@ img.skill-image {
 }
 
 div.skill {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
