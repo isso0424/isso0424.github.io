@@ -19,9 +19,9 @@ const links = [
  */
 
 export const TopPage: React.FC<RouteProps> = () => (
-  <>
+  <div className="page">
     <img src={icon} alt="isso0424 icon" className="top-page-icon" />
     <h1>isso0424(Kota Isozaki)</h1>
     <p>My portfolio under construction...</p>
-  </>
+  </div>
 );

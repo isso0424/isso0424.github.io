@@ -122,13 +122,15 @@ const dartLicense =
   "Dart and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.";
 export const SkillsPage: React.FC = () => (
   <>
-    <h1>Skills</h1>
-    <div className="main">
-      {skills.map((category) => (
-        <SkillsFrame category={category.category} skills={category.skills} />
-      ))}
+    <div className="page">
+      <h1>Skills</h1>
+      <div className="main">
+        {skills.map((category) => (
+          <SkillsFrame category={category.category} skills={category.skills} />
+        ))}
+      </div>
+      <p className="credit">{flutterLicense}</p>
+      <p className="credit">{dartLicense}</p>
     </div>
-    <p className="credit">{flutterLicense}</p>
-    <p className="credit">{dartLicense}</p>
   </>
 );
