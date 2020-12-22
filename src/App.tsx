@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { AboutPage } from "./pages/AboutPage";
 import { SkillsPage } from "./pages/SkillsPage";
 import { RightsNotationPage } from "./pages/RightsNotationPage";
+import { WorksPage } from "./pages/WorksPage";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -36,6 +37,7 @@ const App: React.FC = () => (
       <Route path="/about" component={AboutPage} />
       <Route path="/skills" component={SkillsPage} />
       <Route path="/rights" component={RightsNotationPage} />
+      <Route path="/works" component={WorksPage} />
     </Layout>
   </Router>
 );
