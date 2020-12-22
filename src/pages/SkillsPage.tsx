@@ -6,17 +6,16 @@ import NodeJSIcon from "../static/nodejs-icon.svg";
 import DjangIcon from "../static/django-icon.svg";
 import GolangIcon from "../static/Go-Logo_LightBlue.svg";
 import TypeScriptIcon from "../static/ts-logo-256.svg";
-import PythonIcon from "../static/python-logo.png";
+import PythonIcon from "../static/python-logo.svg";
 import RustIcon from "../static/rust-logo.png";
 import DartIcon from "../static/dart-logo.svg";
-import KotlinIcon from "../static/kotlin-logo.svg";
+import KotlinIcon from "../static/kotlin-logo.png";
 import HTMLIcon from "../static/html-logo.svg";
 import MarkdownIcon from "../static/markdown-logo.svg";
-import CSSIcon from "../static/css-logo.png";
+import CSSIcon from "../static/css-logo.svg";
 import SASSIcon from "../static/sass-logo.png";
 import AndroidRobotIcon from "../static/android-robot.svg";
 import FlutterIcon from "../static/flutter-logo.svg";
-import MySQLIcon from "../static/mysql-logo.png";
 import ElectronIcon from "../static/electron-logo.svg";
 
 const skills: Array<SkillCategory> = [
@@ -58,7 +57,6 @@ const skills: Array<SkillCategory> = [
       },
       {
         name: "MySQL",
-        imageURL: MySQLIcon,
       },
     ],
   },
@@ -66,11 +64,11 @@ const skills: Array<SkillCategory> = [
     category: "Mobile",
     skills: [
       {
-        name: "AndroidNative",
+        name: "Android™Native",
         imageURL: AndroidRobotIcon,
       },
       {
-        name: "Flutter",
+        name: "Flutter™",
         imageURL: FlutterIcon,
       },
     ],
@@ -95,7 +93,7 @@ const skills: Array<SkillCategory> = [
         imageURL: RustIcon,
       },
       {
-        name: "Dart",
+        name: "Dart™",
         imageURL: DartIcon,
       },
       {
@@ -115,11 +113,17 @@ const skills: Array<SkillCategory> = [
   },
 ];
 
+const flutterLicense =
+  "Flutter and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.";
+const dartLicense =
+  "Dart and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.";
 export const SkillsPage: React.FC = () => (
   <>
     <h1>Skills</h1>
     {skills.map((category) => (
       <SkillsFrame category={category.category} skills={category.skills} />
     ))}
+    <p>{flutterLicense}</p>
+    <p>{dartLicense}</p>
   </>
 );
