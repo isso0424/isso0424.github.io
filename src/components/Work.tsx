@@ -1,4 +1,5 @@
 import React from "react";
+import "./Work.scss";
 
 interface Props {
   title: string;

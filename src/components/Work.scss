@@ -1,0 +1,19 @@
+div.work-card {
+  display: flex;
+  margin-top:2%;
+  padding: 0 2%;
+  background-color: #111;
+  justify-content: baseline;
+  flex-direction: column;
+  flex-basis: 40%;
+  min-width: 40%;
+}
+
+h3.work-title {
+  display: flex;
+}
+
+p.work-text {
+  display: flex;
+  word-wrap: normal;
+}
