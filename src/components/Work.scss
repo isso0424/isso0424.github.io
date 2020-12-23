@@ -1,0 +1,31 @@
+div.work-card {
+  display: flex;
+  margin-top:2%;
+  padding: 0 2%;
+  background-color: #111;
+  justify-content: baseline;
+  flex-direction: column;
+  flex-basis: 40%;
+  min-width: 40%;
+  animation: worksIn 1s ease 0s 1 normal;
+}
+
+h3.work-title {
+  display: flex;
+}
+
+p.work-text {
+  display: flex;
+  word-wrap: normal;
+}
+
+@keyframes worksIn {
+  0% {
+    opacity: 0;
+    transform: translateZ(150px) rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) rotateX(0);
+  }
+}
