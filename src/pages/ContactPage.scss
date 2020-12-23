@@ -1,0 +1,10 @@
+div.contact-main {
+  @extend .main !optional;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  width: auto;
+  padding: 2% 10%;
+  animation: worksIn 1s ease 0s 1 normal;
+}
