@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ba3d442.chunk.css",
-    "main.js": "/static/js/main.11eee83c.chunk.js",
-    "main.js.map": "/static/js/main.11eee83c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.56255215.js",
-    "runtime-main.js.map": "/static/js/runtime-main.56255215.js.map",
+    "main.css": "/static/css/main.ed0448a0.chunk.css",
+    "main.js": "/static/js/main.91a75368.chunk.js",
+    "main.js.map": "/static/js/main.91a75368.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0b425f86.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0b425f86.js.map",
     "static/js/2.05efec43.chunk.js": "/static/js/2.05efec43.chunk.js",
     "static/js/2.05efec43.chunk.js.map": "/static/js/2.05efec43.chunk.js.map",
-    "static/js/3.19471250.chunk.js": "/static/js/3.19471250.chunk.js",
-    "static/js/3.19471250.chunk.js.map": "/static/js/3.19471250.chunk.js.map",
+    "static/js/3.55ff17c2.chunk.js": "/static/js/3.55ff17c2.chunk.js",
+    "static/js/3.55ff17c2.chunk.js.map": "/static/js/3.55ff17c2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1ba3d442.chunk.css.map": "/static/css/main.1ba3d442.chunk.css.map",
+    "static/css/main.ed0448a0.chunk.css.map": "/static/css/main.ed0448a0.chunk.css.map",
     "static/js/2.05efec43.chunk.js.LICENSE.txt": "/static/js/2.05efec43.chunk.js.LICENSE.txt",
     "static/media/Go-Logo_LightBlue.73f80781.svg": "/static/media/Go-Logo_LightBlue.73f80781.svg",
+    "static/media/Octocat.363cb5ed.png": "/static/media/Octocat.363cb5ed.png",
     "static/media/PC_icon.23a6e51d.jpg": "/static/media/PC_icon.23a6e51d.jpg",
+    "static/media/Twitter_Social_Icon_Circle_Color.6afcb252.svg": "/static/media/Twitter_Social_Icon_Circle_Color.6afcb252.svg",
     "static/media/android-robot.53b63277.svg": "/static/media/android-robot.53b63277.svg",
     "static/media/css-logo.5da907d7.svg": "/static/media/css-logo.5da907d7.svg",
     "static/media/dart-logo.b00876ea.svg": "/static/media/dart-logo.b00876ea.svg",
     "static/media/django-icon.83a208fa.svg": "/static/media/django-icon.83a208fa.svg",
     "static/media/electron-logo.743c23e7.svg": "/static/media/electron-logo.743c23e7.svg",
+    "static/media/f_logo_RGB-Blue_1024.5b4225fa.png": "/static/media/f_logo_RGB-Blue_1024.5b4225fa.png",
     "static/media/flutter-logo.2d079625.svg": "/static/media/flutter-logo.2d079625.svg",
     "static/media/html-logo.5804150e.svg": "/static/media/html-logo.5804150e.svg",
     "static/media/kotlin-logo.12b01c2d.png": "/static/media/kotlin-logo.12b01c2d.png",
@@ -31,9 +34,9 @@
     "static/media/ts-logo-256.8b592475.svg": "/static/media/ts-logo-256.8b592475.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56255215.js",
+    "static/js/runtime-main.0b425f86.js",
     "static/js/2.05efec43.chunk.js",
-    "static/css/main.1ba3d442.chunk.css",
-    "static/js/main.11eee83c.chunk.js"
+    "static/css/main.ed0448a0.chunk.css",
+    "static/js/main.91a75368.chunk.js"
   ]
 }
