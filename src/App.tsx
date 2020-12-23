@@ -8,6 +8,7 @@ import { AboutPage } from "./pages/AboutPage";
 import { SkillsPage } from "./pages/SkillsPage";
 import { RightsNotationPage } from "./pages/RightsNotationPage";
 import { WorksPage } from "./pages/WorksPage";
+import { ContactPage } from "./pages/ContactPage";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -38,6 +39,7 @@ const App: React.FC = () => (
       <Route path="/skills" component={SkillsPage} />
       <Route path="/rights" component={RightsNotationPage} />
       <Route path="/works" component={WorksPage} />
+      <Route path="/contact" component={ContactPage} />
     </Layout>
   </Router>
 );
