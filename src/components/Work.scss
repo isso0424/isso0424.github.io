@@ -7,6 +7,7 @@ div.work-card {
   flex-direction: column;
   flex-basis: 40%;
   min-width: 40%;
+  animation: worksIn 1s ease 0s 1 normal;
 }
 
 h3.work-title {
@@ -16,4 +17,15 @@ h3.work-title {
 p.work-text {
   display: flex;
   word-wrap: normal;
+}
+
+@keyframes worksIn {
+  0% {
+    opacity: 0;
+    transform: translateZ(150px) rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) rotateX(0);
+  }
 }
