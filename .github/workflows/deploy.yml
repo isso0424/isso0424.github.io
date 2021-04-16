@@ -52,3 +52,18 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./build
+
+    - name: Create CNAME
+      branch: gh-pages
+      run: echo "portfolio.isso0424.dev" >> CNAME
+  
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
+      branch: gh-pages
+      commit_message: "Create CNAME"
+      commit_options: "--no-verify --signoff"
+      file_pattern: CNAME
+      repository: .
+      commit_user_name: 絶対CNAME守るMAN
+      commit_author: CNAME MAN <actions@github.com> # defaults to author of the commit that triggered the run
+
