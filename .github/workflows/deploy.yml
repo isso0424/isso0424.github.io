@@ -55,7 +55,6 @@ jobs:
 
     - name: Create CNAME
       run: |
-        git checkout gh-pages
         echo "portfolio.isso0424.dev" >> CNAME
   
     - name: Commit
