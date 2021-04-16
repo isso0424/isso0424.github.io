@@ -54,8 +54,9 @@ jobs:
         PUBLISH_DIR: ./build
 
     - name: Create CNAME
-      branch: gh-pages
-      run: echo "portfolio.isso0424.dev" >> CNAME
+      run: |
+        git checkout gh-pages
+        echo "portfolio.isso0424.dev" >> CNAME
   
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
