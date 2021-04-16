@@ -60,11 +60,11 @@ jobs:
   
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
-      branch: gh-pages
-      commit_message: "Create CNAME"
-      commit_options: "--no-verify --signoff"
-      file_pattern: CNAME
-      repository: .
-      commit_user_name: 絶対CNAME守るMAN
-      commit_author: CNAME MAN <actions@github.com> # defaults to author of the commit that triggered the run
-
+      with:
+        branch: gh-pages
+        commit_message: "Create CNAME"
+        commit_options: "--no-verify --signoff"
+        file_pattern: CNAME
+        repository: .
+        commit_user_name: 絶対CNAME守るMAN
+        commit_author: CNAME MAN <actions@github.com> # defaults to author of the commit that triggered the run
