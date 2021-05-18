@@ -13,11 +13,13 @@ div.work-card {
 
 h3.work-title {
   display: flex;
+  border-bottom: 1px solid #fff;
 }
 
 p.work-text {
   display: flex;
   word-wrap: normal;
+  margin-top: 0;
 }
 
 @keyframes worksIn {
