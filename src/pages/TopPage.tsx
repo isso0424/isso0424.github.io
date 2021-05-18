@@ -4,8 +4,9 @@ import icon from "../static/PC_icon.jpg";
 import "./TopPage.scss";
 
 export const TopPage: React.FC<RouteProps> = () => (
-  <div className="page">
+  <div className="page top-page">
     <img src={icon} alt="isso0424 icon" className="top-page-icon" />
-    <h1>isso0424(Kota Isozaki)</h1>
+    <h3>isso0424</h3>
+    <h1>Kota Isozaki</h1>
   </div>
 );
