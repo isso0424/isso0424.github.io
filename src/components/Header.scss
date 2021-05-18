@@ -2,17 +2,35 @@ div.header {
   background-color: black;
   height: 10%;
   padding-bottom: 1%;
+
+  .title {
+    display: flex;
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    .icon {
+      height: 2.5rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+  }
 }
 
 ul.header-menu {
   list-style-type: none;
   color: white;
   text-align: center;
-  padding: 2% 0;
-  margin: 0;
+  padding: 0 0 2% 0;
+  margin: 0 1rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow-x: auto;
 }
 
 li.current-page {
