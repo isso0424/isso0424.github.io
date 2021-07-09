@@ -55,7 +55,7 @@ jobs:
 
     - name: Create CNAME
       run: |
-        echo "www.isso0424.dev" >> CNAME
+        echo "isso0424.dev" >> CNAME
   
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
