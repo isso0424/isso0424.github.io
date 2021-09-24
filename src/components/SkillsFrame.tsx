@@ -10,8 +10,9 @@ export const SkillsFrame: React.FC<SkillCategory> = (props: SkillCategory) => {
     <>
       <h2>{category}</h2>
       <div className="skill-frame">
-        {skills.map((skill) => (
+        {skills.map((skill, index) => (
           <Skill
+            key={index}
             name={skill.name}
             imageURL={skill.imageURL}
             width={skill.width}

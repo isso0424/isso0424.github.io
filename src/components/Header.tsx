@@ -36,8 +36,9 @@ export const Header: React.FC = () => {
         <p className="text">isso0424</p>
       </div>
       <ul className="header-menu">
-        {headerContents.map((content) => (
+        {headerContents.map((content, index) => (
           <li
+            key={index}
             className={
               location.pathname === content.link
                 ? "current-page"

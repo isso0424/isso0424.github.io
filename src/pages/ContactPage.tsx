@@ -39,10 +39,13 @@ export const ContactPage: React.FC = () => (
     <div className="contact-main">
       {contacts.map((contact) => (
         <Contact
+          key={contact.alt}
           url={contact.url}
           alt={contact.alt}
           image={contact.image}
           text={contact.text}
+          width={contact.width}
+          height={contact.height}
         />
       ))}
     </div>

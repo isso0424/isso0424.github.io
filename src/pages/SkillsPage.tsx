@@ -160,7 +160,7 @@ export const SkillsPage: React.FC = () => (
       <h1>Skills</h1>
       <div className="main">
         {skills.map((category) => (
-          <SkillsFrame category={category.category} skills={category.skills} />
+          <SkillsFrame key={category.category} category={category.category} skills={category.skills} />
         ))}
       </div>
       <p className="credit">{flutterLicense}</p>
