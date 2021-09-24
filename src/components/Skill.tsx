@@ -7,7 +7,7 @@ interface ImageProps {
   height: number;
 }
 
-export const Skill: React.FC<SkillProps & ImageProps> = (
+const Skill: React.FC<SkillProps & ImageProps> = (
   props: SkillProps & ImageProps,
 ) => {
   const { name, imageURL, width, height } = props;
@@ -28,3 +28,5 @@ export const Skill: React.FC<SkillProps & ImageProps> = (
     </div>
   );
 };
+
+export default Skill;
