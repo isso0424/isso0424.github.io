@@ -37,17 +37,17 @@ export const Header: React.FC = () => {
       </div>
       <ul className="header-menu">
         {headerContents.map((content) => (
-          <Link to={content.link} className="link">
-            <li
-              className={
-                location.pathname === content.link
-                  ? "current-page"
-                  : "header-item"
-              }
-            >
+          <li
+            className={
+              location.pathname === content.link
+                ? "current-page"
+                : "header-item"
+            }
+          >
+            <Link to={content.link} className="link">
               <span className="header-text">{content.message}</span>
-            </li>
-          </Link>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
