@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.scss";
-import icon from "../static/PC_icon.jpg";
+import icon from "../static/header_icon.webp";
 
 /* "Top", "About", "Skill", "Works", "Contact" */
 const headerContents = [
@@ -37,17 +37,18 @@ export const Header: React.FC = () => {
       </div>
       <ul className="header-menu">
         {headerContents.map((content) => (
-          <Link to={content.link} className="link">
-            <li
-              className={
-                location.pathname === content.link
-                  ? "current-page"
-                  : "header-item"
-              }
-            >
+          <li
+            key={content.message}
+            className={
+              location.pathname === content.link
+                ? "current-page"
+                : "header-item"
+            }
+          >
+            <Link to={content.link} className="link">
               <span className="header-text">{content.message}</span>
-            </li>
-          </Link>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>

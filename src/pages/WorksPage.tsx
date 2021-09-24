@@ -70,14 +70,14 @@ export const WorksPage: React.FC = () => {
         <TabPanel>
           <div className="works">
             {contestsWorks.map((work) => (
-              <Work title={work.title} text={work.text} />
+              <Work key={work.title} title={work.title} text={work.text} />
             ))}
           </div>
         </TabPanel>
         <TabPanel>
           <div className="works">
             {personalWorks.map((work) => (
-              <Work title={work.title} text={work.text} />
+              <Work key={work.title} title={work.title} text={work.text} />
             ))}
           </div>
         </TabPanel>

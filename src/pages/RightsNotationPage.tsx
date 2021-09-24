@@ -44,7 +44,7 @@ export const RightsNotationPage: React.FC = () => (
   <>
     <div className="license-page">
       {rights.map((license) => (
-        <div>
+        <div key={license.target}>
           <h4>{license.target}</h4>
           <p className="license-text">{license.text}</p>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { RouteProps } from "react-router";
-import icon from "../static/PC_icon.jpg";
+import icon from "../static/PC_icon.webp";
 import "./TopPage.scss";
 
 export const TopPage: React.FC<RouteProps> = () => (

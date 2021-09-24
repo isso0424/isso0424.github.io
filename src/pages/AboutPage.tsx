@@ -27,6 +27,7 @@ export const AboutPage: React.FC = () => (
       <div className="main">
         {profiles.map((profile) => (
           <AboutContent
+            key={profile.attribute}
             attribute={profile.attribute}
             content={profile.content}
           />
