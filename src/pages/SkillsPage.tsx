@@ -97,7 +97,7 @@ const skills: Array<SkillCategory> = [
     ],
   },
   {
-    category: "ProgrammingLanguages",
+    category: "Languages",
     skills: [
       {
         name: "Golang",
