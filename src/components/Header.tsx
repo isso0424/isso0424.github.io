@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.scss";
-import icon from "../static/PC_icon.jpg";
+import icon from "../static/header_icon.webp";
 
 /* "Top", "About", "Skill", "Works", "Contact" */
 const headerContents = [
