@@ -40,7 +40,7 @@ jobs:
     # パッケージのインストールとアプリのビルド
     - name: lint
       run: |
-        pnpm
+        pnpm i
         pnpm lint
       env:
         CI: true

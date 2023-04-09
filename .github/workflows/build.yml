@@ -40,7 +40,7 @@ jobs:
     # パッケージのインストールとアプリのビルド
     - name: install and build
       run: |
-        pnpm
+        pnpm i
         pnpm build
       env:
         CI: true
