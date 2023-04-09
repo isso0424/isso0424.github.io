@@ -33,14 +33,15 @@ jobs:
 
     # 使用するnodeのバージョンを指定
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: "pnpm"
 
     # パッケージのインストールとアプリのビルド
     - name: install and build
       run: |
-        pnpm i
+        pnpm i --frozen-lockfile
         pnpm build
       env:
         CI: true
