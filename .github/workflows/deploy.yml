@@ -4,13 +4,9 @@ name: Deploy
 # 起動のタイミング
 # 今回はmasterブランチへのpush
 on:
-  workflow_run:
-    workflows:
-      - build
+  push:
     branches:
-      - master
-    types:
-      - completed
+      - "master"
 
 # ジョブの定義
 jobs:
