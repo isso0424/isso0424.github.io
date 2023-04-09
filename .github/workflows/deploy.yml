@@ -40,8 +40,8 @@ jobs:
     # パッケージのインストールとアプリのビルド
     - name: install and build
       run: |
-        yarn
-        yarn build
+        pnpm
+        pnpm build
       env:
         CI: true
 

@@ -36,7 +36,7 @@ jobs:
     # パッケージのインストールとアプリのビルド
     - name: lint
       run: |
-        yarn
-        yarn lint
+        pnpm
+        pnpm lint
       env:
         CI: true
