@@ -41,7 +41,7 @@ jobs:
 
     # gh-pagesを使って公開
     - name: publish to artifact
-      uses: peaceiris/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v1
       with:
         path: ./dist
 
