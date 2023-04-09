@@ -23,7 +23,7 @@ jobs:
     # nodeのバージョン一覧
     strategy:
       matrix:
-        node-version: ['14.x']
+        node-version: ['16.x']
 
     # 各ステップの実行
     steps:
