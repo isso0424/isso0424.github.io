@@ -32,6 +32,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - uses: pnpm/action-setup@v2
+      with:
+        version: 8
 
     # 使用するnodeのバージョンを指定
     - name: Use Node.js ${{ matrix.node-version }}
