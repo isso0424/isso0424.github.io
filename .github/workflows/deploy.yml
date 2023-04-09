@@ -51,7 +51,7 @@ jobs:
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./build
+        PUBLISH_DIR: ./dist
 
     - name: Create CNAME
       run: |
