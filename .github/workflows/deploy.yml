@@ -2,11 +2,11 @@
 name: Deploy
 
 # 起動のタイミング
-# 今回はmasterブランチへのpush
+# 今回はmainブランチへのpush
 on:
   push:
     branches:
-      - "master"
+      - main
 
 # ジョブの定義
 jobs:
