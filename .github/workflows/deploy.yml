@@ -14,8 +14,6 @@ jobs:
     # 実行するインスタンス
     runs-on: ubuntu-latest
 
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
     # nodeのバージョン一覧
     strategy:
       matrix:
