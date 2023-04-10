@@ -1,13 +1,8 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-main {
+.app-main {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
@@ -16,33 +11,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.contacts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-div.main {
+%main {
   background-color: #111;
   width: auto;
   padding: 2% 10%;
   display: grid;
-  animation: fadeIn 0.6s ease 0s 1 normal;
+  animation: fade-in 0.6s ease 0s 1 normal;
   transform-origin: top;
+}
+
+div.main {
+  @extend %main;
 }
 
 div.page {
@@ -52,10 +31,11 @@ div.page {
   width: 100%;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

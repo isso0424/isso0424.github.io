@@ -7,7 +7,7 @@ div.work-card {
   flex-direction: column;
   flex-basis: 40%;
   min-width: 40%;
-  animation: fadeIn 0.6s ease 0s 1 normal;
+  animation: fade-in 0.6s ease 0s 1 normal;
   transform-origin: top;
 }
 
@@ -20,15 +20,4 @@ p.work-text {
   display: flex;
   word-wrap: normal;
   margin-top: 0;
-}
-
-@keyframes worksIn {
-  0% {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(100%);
-  }
 }

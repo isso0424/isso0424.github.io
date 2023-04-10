@@ -59,11 +59,11 @@ export const WorksPage: React.FC = () => {
         onSelect={(index) => setState({ currentTab: index })}
         selectedIndex={state.currentTab}
       >
-        <TabList className="tabList">
-          <Tab className={state.currentTab === 0 ? "selectedTab" : "tab"}>
+        <TabList className="tab-list">
+          <Tab className={state.currentTab === 0 ? "selected-tab" : "tab"}>
             Contests
           </Tab>
-          <Tab className={state.currentTab === 1 ? "selectedTab" : "tab"}>
+          <Tab className={state.currentTab === 1 ? "selected-tab" : "tab"}>
             Personal
           </Tab>
         </TabList>

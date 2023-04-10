@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
   return (
     <div className="root">
       <Header />
-      <div className="App-main">
+      <div className="app-main">
         {children}
         <p>
           <Link to="/rights" style={{ color: "#fff" }}>
