@@ -1,7 +1,6 @@
 div.works {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -16,25 +15,27 @@ li.tab {
   background-color: #555;
   position: relative;
   cursor: pointer;
-  &:before {
-    content: ""; /*疑似要素の中身は空（記述は必須）*/
-    position: absolute; /*子要素として疑似要素を固定*/
-    left: 0; /*長さはテキストの両端まで*/
-    right: 0; /*長さはテキストの両端まで*/
-    bottom: 0;  /*線の上下位置*/
-    width: 100%; /*線の長さ*/
-    height: 5px; /*線の太さ*/
-    background-color: #9e9c9c; /*線の色*/
-    transform: scale(1, 0); /*横方向に0状態から全体まで線を入れる*/
-    transform-origin:  bottom; /*中央を起点にアニメーション*/
-    transition: transform .2s; /*アニメーションの時間*/
+
+  &::before {
+    content: ""; /* 疑似要素の中身は空（記述は必須） */
+    position: absolute; /* 子要素として疑似要素を固定 */
+    left: 0; /* 長さはテキストの両端まで */
+    right: 0; /* 長さはテキストの両端まで */
+    bottom: 0;  /* 線の上下位置 */
+    width: 100%; /* 線の長さ */
+    height: 5px; /* 線の太さ */
+    background-color: #9e9c9c; /* 線の色 */
+    transform: scale(1, 0); /* 横方向に0状態から全体まで線を入れる */
+    transform-origin:  bottom; /* 中央を起点にアニメーション */
+    transition: transform .2s; /* アニメーションの時間 */
   }
-  &:hover:before {
+
+  &:hover::before {
     transform: scaleX(1);
   }
 }
 
-li.selectedTab {
+li.selected-tab {
   padding: 2% 0;
   list-style: none;
   display: grid;
@@ -45,19 +46,20 @@ li.selectedTab {
   background-color: #222;
   position: relative;
   cursor: pointer;
-  &:before {
-    content: ""; /*疑似要素の中身は空（記述は必須）*/
-    position: absolute; /*子要素として疑似要素を固定*/
-    left: 0; /*長さはテキストの両端まで*/
-    right: 0; /*長さはテキストの両端まで*/
+
+  &::before {
+    content: ""; /* 疑似要素の中身は空（記述は必須） */
+    position: absolute; /* 子要素として疑似要素を固定 */
+    left: 0; /* 長さはテキストの両端まで */
+    right: 0; /* 長さはテキストの両端まで */
     bottom: 0;
-    width: 100%; /*線の長さ*/
-    height: 5px; /*線の太さ*/
-    background-color: #9e9c9c; /*線の色*/
+    width: 100%; /* 線の長さ */
+    height: 5px; /* 線の太さ */
+    background-color: #9e9c9c; /* 線の色 */
   }
 }
 
-.tabList {
+.tab-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;

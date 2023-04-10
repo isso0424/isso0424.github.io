@@ -14,8 +14,10 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint -c .eslintrc.yml --ignore-path .gitignore 'src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint -c .eslintrc.yml --fix --ignore-path .gitignore 'src/**/*.{ts,tsx}'",
+    "lint": "pnpm lint:eslint && pnpm lint:style",
+    "lint:eslint": "eslint -c .eslintrc.yml --ignore-path .gitignore 'src/**/*.{ts,tsx}'",
+    "lint:style": "stylelint '**/*.scss'",
+    "lint:fix": "eslint -c .eslintrc.yml --fix --ignore-path .gitignore 'src/**/*.{ts,tsx}' && stylelint '**/*.scss' --fix",
     "serve": "vite preview"
   },
   "browserslist": {
@@ -51,6 +53,8 @@
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.7",
     "react-test-renderer": "^18.2.0",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard-scss": "^7.0.1",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-svgr": "^2.4.0",
