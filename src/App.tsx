@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import { Route, Switch } from "react-router";
+import { Route, Routes } from "react-router";
 import { TopPage } from "./pages/TopPage";
 import { Header } from "./components/Header";
 import { AboutPage } from "./pages/AboutPage";
@@ -35,15 +35,15 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
 const App: React.FC = () => (
   <Router>
     <Layout>
-      <Switch>
-        <Route exact path="/" component={TopPage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/skills" component={SkillsPage} />
-        <Route path="/rights" component={RightsNotationPage} />
-        <Route path="/works" component={WorksPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<TopPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/rights" element={<RightsNotationPage />} />
+        <Route path="/works" element={<WorksPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route element={<NotFoundPage />} />
+      </Routes>
     </Layout>
   </Router>
 );
