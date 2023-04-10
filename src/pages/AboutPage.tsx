@@ -8,7 +8,7 @@ const profiles = [
   },
   {
     attribute: "Grade",
-    content: "3rd Grade",
+    content: "5th Grade",
   },
   {
     attribute: "BirthDay",
